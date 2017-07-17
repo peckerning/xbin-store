@@ -6,14 +6,14 @@ dubbox:
     owner: binux
   registry:
     protocol: zookeeper
-    address: 192.168.125.128:2181
+    address: zookeeper://101.201.232.68:2181?backup=101.201.232.68:2182,101.201.232.68:2183
   annotation:
     package: cn.binux.order.controller,cn.binux.order.interceptor
   monitor:
     enabled: false
-    address: 192.168.125.1:6060
-    username: admin
-    password: admin
+    address: 101.201.232.68:6060
+    username: root
+    password: root
 
 #配置模板想到classpath路径，后面须加上"/"
 beetl:

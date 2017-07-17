@@ -6,13 +6,13 @@ dubbox:
     owner: binux
   registry: 
     protocol: zookeeper
-    address: 192.168.125.128:2181
+    address: zookeeper://101.201.232.68:2181?backup=101.201.232.68:2182,101.201.232.68:2183
   annotation:
     package: cn.binux.notify
   protocol:
     name: dubbo
     port: 20886
-    host: 192.168.125.1
+#    host: 192.168.108.1
     timeout: 30000
     threadpool: fixed
     threads: 500
@@ -21,9 +21,9 @@ dubbox:
     optimizer: cn.binux.serial.SerializationOptimizerImpl
   monitor:
     enabled: false
-    address: 192.168.125.1:6060
-    username: admin
-    password: admin
+    address: 101.201.232.68:6060
+    username: root
+    password: root
 
 # Redis
 redisKey:
